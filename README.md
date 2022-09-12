@@ -1,5 +1,17 @@
 # DealX_Automation_Assessment
  Automation Testing Assessment
+ 
+#Instruction on how to execute the solution.
+
+Save the project on your Local machine
+
+For better experience, Make use of Intellij IDE (Download and Install Intellij IDE if not already in your machine)
+
+Open Intellij IDE
+
+Locate the project from where you saved it on your local machine and open it
+
+If any errors, Resolve the dependencies on the pom.xml file.
 
 
 # Instruction on how to open report
