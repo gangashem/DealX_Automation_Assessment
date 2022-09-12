@@ -35,7 +35,7 @@ formatter.match({
   "location": "LaunchBrowser.Iopenthebrowser()"
 });
 formatter.result({
-  "duration": 23205444900,
+  "duration": 34063227799,
   "status": "passed"
 });
 formatter.uri("Login.feature");
@@ -96,28 +96,28 @@ formatter.match({
   "location": "SignIn.iClickOnSignInLink()"
 });
 formatter.result({
-  "duration": 6510474300,
+  "duration": 7400203499,
   "status": "passed"
 });
 formatter.match({
   "location": "SignIn.iEnterTheUsername()"
 });
 formatter.result({
-  "duration": 628747800,
+  "duration": 199356599,
   "status": "passed"
 });
 formatter.match({
   "location": "SignIn.iEnterThePassword()"
 });
 formatter.result({
-  "duration": 309067300,
+  "duration": 248184500,
   "status": "passed"
 });
 formatter.match({
   "location": "SignIn.iClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 5987908000,
+  "duration": 12799024600,
   "status": "passed"
 });
 formatter.uri("NavigationMenu.feature");
@@ -168,14 +168,14 @@ formatter.match({
   "location": "NavigationMenu.thatIHoverOverWomenMenuAndIClickOnTShirtsSubcategory()"
 });
 formatter.result({
-  "duration": 5902727700,
+  "duration": 9947212001,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationMenu.iVerifyTheCorrectPageHasBeenLoaded()"
 });
 formatter.result({
-  "duration": 75859100,
+  "duration": 70665200,
   "status": "passed"
 });
 formatter.uri("Search.feature");
@@ -296,21 +296,53 @@ formatter.match({
   "location": "Search.iSearchForInSearchArea(String)"
 });
 formatter.result({
-  "duration": 192072700,
+  "duration": 153532701,
   "status": "passed"
 });
 formatter.match({
   "location": "Search.iClickOnSearchButton()"
 });
 formatter.result({
-  "duration": 3744432600,
+  "duration": 10080266800,
   "status": "passed"
 });
 formatter.match({
   "location": "Search.iVerifyTheFirstItemMatchesTheSearchCriteria()"
 });
 formatter.result({
-  "duration": 68588400,
+  "duration": 57313001,
+  "status": "passed"
+});
+formatter.scenario({
+  "comments": [
+    {
+      "line": 13,
+      "value": "#TC2 (Test Case 2)"
+    }
+  ],
+  "line": 15,
+  "name": "Search for an item with 3 search Criteria",
+  "description": "",
+  "id": "verify-search-results;search-for-an-item-with-3-search-criteria",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 14,
+      "name": "@TC2_VerifySearchResults"
+    }
+  ]
+});
+formatter.step({
+  "line": 16,
+  "name": "I Search and Verify Three different search criteria",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Search.iSearchAndVerifyThreeDifferentSearchCriteria()"
+});
+formatter.result({
+  "duration": 21661790201,
   "status": "passed"
 });
 formatter.scenario({
@@ -358,21 +390,21 @@ formatter.match({
   "location": "Search.iSearchForItemInSearchArea()"
 });
 formatter.result({
-  "duration": 2201058300,
+  "duration": 993109800,
   "status": "passed"
 });
 formatter.match({
   "location": "Search.iClickOnSearchButton()"
 });
 formatter.result({
-  "duration": 2855750300,
+  "duration": 6943209800,
   "status": "passed"
 });
 formatter.match({
   "location": "Search.iVerifyTheFirstItemMatchesTheSearchCriteria()"
 });
 formatter.result({
-  "duration": 63315500,
+  "duration": 60470500,
   "status": "passed"
 });
 formatter.uri("Shopping.feature");
@@ -497,14 +529,14 @@ formatter.match({
   "location": "Shopping.iAddItemToShoppingCart()"
 });
 formatter.result({
-  "duration": 55027100,
+  "duration": 77341299,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopping.iViewShoppingCart()"
 });
 formatter.result({
-  "duration": 8754744000,
+  "duration": 12058186900,
   "status": "passed"
 });
 formatter.match({
@@ -517,14 +549,14 @@ formatter.match({
   "location": "Shopping.iIncreaseQuantity(String)"
 });
 formatter.result({
-  "duration": 148225900,
+  "duration": 110712800,
   "status": "passed"
 });
 formatter.match({
   "location": "Shopping.iCalculateAndVerifyTotalAmount()"
 });
 formatter.result({
-  "duration": 5111042300,
+  "duration": 5041585700,
   "status": "passed"
 });
 });

@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         tags = {"@OpenBrowser," +
                 "@TC4_SignIn_scenario," +
                 "@TC1_VerifySearchResults," +
-                //"@TC2_VerifySearchResults," +    //Not finished/working
+                "@TC2_VerifySearchResults," +
                 "@TC3_VerifySearchResults," +
                 "@TC5_AddItemToShoppingCart," +
                 "@TC6_MenuNavigation"

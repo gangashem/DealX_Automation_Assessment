@@ -40,6 +40,11 @@ Feature: Verify Search Results
     [32mAnd [0m[32mI click on search button[0m                             [90m# Search.iClickOnSearchButton()[0m
     [32mThen [0m[32mI verify the first item matches the search criteria[0m [90m# Search.iVerifyTheFirstItemMatchesTheSearchCriteria()[0m
 
+  #TC2 (Test Case 2)
+  @TC2_VerifySearchResults
+  Scenario: Search for an item with 3 search Criteria         [90m# Search.feature:15[0m
+    [32mGiven [0m[32mI Search and Verify Three different search criteria[0m [90m# Search.iSearchAndVerifyThreeDifferentSearchCriteria()[0m
+
   #TC3 (Test Case 3)
   @TC3_VerifySearchResults
   Scenario: Search for an item using Excel Sheet data input  [90m# Search.feature:20[0m

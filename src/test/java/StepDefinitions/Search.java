@@ -6,10 +6,12 @@ import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import resources.InitializeDriver;
 import resources.ReusableMethods;
 
 import java.io.StringReader;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static javax.swing.UIManager.getInt;
@@ -47,14 +49,21 @@ public class Search extends InitializeDriver {
         Assert.assertTrue("[Error- The first item does not match with the search criteria",result); // Asserting method to compare
     }
 
+    /*
+    * Method to Manipulate the string and store each search criteria in an array and use a loop to perform the search and verify
+    * */
     @Given("^I Search and Verify Three different search criteria$")
-    public void iSearchAndVerifyThreeDifferentSearchCriteria(String inputs) throws Throwable{
-        String searchCriteria = "T-shirts,Dresses,Blouses";
-        int count = getInt("comments.size");
-        StringReader str = new StringReader(searchCriteria);
-        for(int i = 0; 1 < count; i++){
-            //inputs = str.read("["+i+"]");
-            driver.findElement(By.xpath(ReusableMethods.ReadElementsLocator("SearchField",sDefaultPath + "/src/test/java/resources/ElementLocator.properties"))).sendKeys(Keys.chord(Keys.CONTROL, "a"),searchCriteria);
+    public void iSearchAndVerifyThreeDifferentSearchCriteria() throws Throwable{
+        String[] searchCriteria = {"T-shirts","Dress","Blouse"};
+        for(int i = 0; i < searchCriteria.length; i++){
+            driver.findElement(By.xpath(ReusableMethods.ReadElementsLocator("SearchField",
+                        sDefaultPath + "/src/test/java/resources/ElementLocator.properties"))).sendKeys(Keys.chord(Keys.CONTROL, "a"),searchCriteria[i]);
+             //Click on search button
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //wait method for 10 second
+            driver.findElement(By.xpath(ReusableMethods.ReadElementsLocator("SearchButton",sDefaultPath + "/src/test/java/resources/ElementLocator.properties"))).click();
+            //Verify search criteria
+            boolean result = ReusableMethods.ValidateTextOnPage(driver,searchCriteria[i]); //Verifying text in results for similarity
+            Assert.assertTrue("[Error- The first item does not match with the search criteria",result); // Asserting method to compare
         }
     }
 }
