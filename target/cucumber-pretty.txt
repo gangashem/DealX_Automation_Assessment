@@ -1,0 +1,68 @@
+@LaunchBrowserFeature
+Feature: Launch automationpractice.com Browser
+
+  @OpenBrowser
+  Scenario: Open Browser     [90m# LaunchBrowser.feature:4[0m
+    [32mGiven [0m[32mI open the browser[0m [90m# LaunchBrowser.Iopenthebrowser()[0m
+@SignInFeature
+Feature: Sign In
+
+  #TC4 (Test Case 4)
+  @TC4_SignIn_scenario
+  Scenario: SignIn to automationpractice.com [90m# Login.feature:6[0m
+    [32mGiven [0m[32mI click on Sign in link[0m            [90m# SignIn.iClickOnSignInLink()[0m
+    [32mWhen [0m[32mi enter the username[0m                [90m# SignIn.iEnterTheUsername()[0m
+    [32mAnd [0m[32mi enter the password[0m                 [90m# SignIn.iEnterThePassword()[0m
+    [32mThen [0m[32mi click on SignIn button[0m            [90m# SignIn.iClickOnSignInButton()[0m
+@NavigationMenuFeature
+Feature: Navigation Menu
+
+  #TC6 (Test Case 6)
+  @TC6_MenuNavigation
+  Scenario: Navigation Menu                                                [90m# NavigationMenu.feature:5[0m
+    [32mGiven [0m[32mThat i hover over Women Menu And I click on T-shirts subcategory[0m [90m# NavigationMenu.thatIHoverOverWomenMenuAndIClickOnTShirtsSubcategory()[0m
+    [32mThen [0m[32mI Verify the correct page has been loaded[0m                         [90m# NavigationMenu.iVerifyTheCorrectPageHasBeenLoaded()[0m
+@SearchFeature
+Feature: Verify Search Results
+
+  #TC1 (Test Case 1)
+  @TC1_VerifySearchResults
+  Scenario Outline: Search for an item                       [90m# Search.feature:5[0m
+    [36mGiven [0m[36mI search for "<Item>" in search area[0m
+    [36mAnd [0m[36mI click on search button[0m
+    [36mThen [0m[36mI verify the first item matches the search criteria[0m
+
+    Examples: 
+
+  @SearchFeature @TC1_VerifySearchResults
+  Scenario Outline: Search for an item                       [90m# Search.feature:11[0m
+    [32mGiven [0m[32mI search for "[0m[32m[1mSummer Dress[0m[32m" in search area[0m         [90m# Search.iSearchForInSearchArea(String)[0m
+    [32mAnd [0m[32mI click on search button[0m                             [90m# Search.iClickOnSearchButton()[0m
+    [32mThen [0m[32mI verify the first item matches the search criteria[0m [90m# Search.iVerifyTheFirstItemMatchesTheSearchCriteria()[0m
+
+  #TC3 (Test Case 3)
+  @TC3_VerifySearchResults
+  Scenario: Search for an item using Excel Sheet data input  [90m# Search.feature:20[0m
+    #Using Excel for data input
+    [32mGiven [0m[32mI search for Item in search area[0m                   [90m# Search.iSearchForItemInSearchArea()[0m
+    [32mAnd [0m[32mI click on search button[0m                             [90m# Search.iClickOnSearchButton()[0m
+    [32mThen [0m[32mI verify the first item matches the search criteria[0m [90m# Search.iVerifyTheFirstItemMatchesTheSearchCriteria()[0m
+@ShoppingFeature
+Feature: Shopping
+
+  #TC5 (Test Case 5)
+  @TC5_AddItemToShoppingCart
+  Scenario Outline: Add item to shopping cart [90m# Shopping.feature:6[0m
+    [36mGiven [0m[36mI add item to shopping cart[0m
+    [36mWhen [0m[36mI view shopping cart[0m
+    [36mAnd [0m[36mI increase "<Item>" quantity[0m
+    [36mThen [0m[36mI calculate and verify total amount[0m
+
+    Examples: 
+
+  @ShoppingFeature @TC5_AddItemToShoppingCart
+  Scenario Outline: Add item to shopping cart [90m# Shopping.feature:13[0m
+    [32mGiven [0m[32mI add item to shopping cart[0m         [90m# Shopping.iAddItemToShoppingCart()[0m
+    [32mWhen [0m[32mI view shopping cart[0m                 [90m# Shopping.iViewShoppingCart()[0m
+    [32mAnd [0m[32mI increase "[0m[32m[1m3[0m[32m" quantity[0m               [90m# Shopping.iIncreaseQuantity(String)[0m
+    [32mThen [0m[32mI calculate and verify total amount[0m  [90m# Shopping.iCalculateAndVerifyTotalAmount()[0m

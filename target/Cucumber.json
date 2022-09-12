@@ -1,0 +1,432 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open Browser",
+        "description": "",
+        "id": "launch-automationpractice.com-browser;open-browser",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23205444900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open the browser",
+            "match": {
+              "location": "LaunchBrowser.Iopenthebrowser()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@OpenBrowser"
+          }
+        ]
+      }
+    ],
+    "name": "Launch automationpractice.com Browser",
+    "description": "",
+    "id": "launch-automationpractice.com-browser",
+    "keyword": "Feature",
+    "uri": "LaunchBrowser.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LaunchBrowserFeature"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "#TC4 (Test Case 4)"
+          }
+        ],
+        "line": 6,
+        "name": "SignIn to automationpractice.com",
+        "description": "",
+        "id": "sign-in;signin-to-automationpractice.com",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6510474300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on Sign in link",
+            "match": {
+              "location": "SignIn.iClickOnSignInLink()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 628747800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i enter the username",
+            "match": {
+              "location": "SignIn.iEnterTheUsername()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 309067300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i enter the password",
+            "match": {
+              "location": "SignIn.iEnterThePassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5987908000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i click on SignIn button",
+            "match": {
+              "location": "SignIn.iClickOnSignInButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@TC4_SignIn_scenario"
+          }
+        ]
+      }
+    ],
+    "name": "Sign In",
+    "description": "",
+    "id": "sign-in",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SignInFeature"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "#TC6 (Test Case 6)"
+          }
+        ],
+        "line": 5,
+        "name": "Navigation Menu",
+        "description": "",
+        "id": "navigation-menu;navigation-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5902727700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "That i hover over Women Menu And I click on T-shirts subcategory",
+            "match": {
+              "location": "NavigationMenu.thatIHoverOverWomenMenuAndIClickOnTShirtsSubcategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75859100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Verify the correct page has been loaded",
+            "match": {
+              "location": "NavigationMenu.iVerifyTheCorrectPageHasBeenLoaded()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@TC6_MenuNavigation"
+          }
+        ]
+      }
+    ],
+    "name": "Navigation Menu",
+    "description": "",
+    "id": "navigation-menu",
+    "keyword": "Feature",
+    "uri": "NavigationMenu.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NavigationMenuFeature"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Search for an item",
+        "description": "",
+        "id": "verify-search-results;search-for-an-item;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 192072700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search for \"Summer Dress\" in search area",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Summer Dress",
+                  "offset": 14
+                }
+              ],
+              "location": "Search.iSearchForInSearchArea(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3744432600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on search button",
+            "match": {
+              "location": "Search.iClickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68588400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify the first item matches the search criteria",
+            "match": {
+              "location": "Search.iVerifyTheFirstItemMatchesTheSearchCriteria()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@SearchFeature"
+          },
+          {
+            "line": 4,
+            "name": "@TC1_VerifySearchResults"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 18,
+            "value": "#TC3 (Test Case 3)"
+          }
+        ],
+        "line": 20,
+        "name": "Search for an item using Excel Sheet data input",
+        "description": "",
+        "id": "verify-search-results;search-for-an-item-using-excel-sheet-data-input",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2201058300,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 21,
+                "value": "#Using Excel for data input"
+              }
+            ],
+            "line": 22,
+            "name": "I search for Item in search area",
+            "match": {
+              "location": "Search.iSearchForItemInSearchArea()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2855750300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on search button",
+            "match": {
+              "location": "Search.iClickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63315500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I verify the first item matches the search criteria",
+            "match": {
+              "location": "Search.iVerifyTheFirstItemMatchesTheSearchCriteria()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@TC3_VerifySearchResults"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Search Results",
+    "description": "",
+    "id": "verify-search-results",
+    "keyword": "Feature",
+    "uri": "Search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SearchFeature"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Add item to shopping cart",
+        "description": "",
+        "id": "shopping;add-item-to-shopping-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 55027100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I add item to shopping cart",
+            "match": {
+              "location": "Shopping.iAddItemToShoppingCart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8754744000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I view shopping cart",
+            "match": {
+              "location": "Shopping.iViewShoppingCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 148225900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I increase \"3\" quantity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "Shopping.iIncreaseQuantity(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5111042300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I calculate and verify total amount",
+            "match": {
+              "location": "Shopping.iCalculateAndVerifyTotalAmount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ShoppingFeature"
+          },
+          {
+            "line": 5,
+            "name": "@TC5_AddItemToShoppingCart"
+          }
+        ]
+      }
+    ],
+    "name": "Shopping",
+    "description": "",
+    "id": "shopping",
+    "keyword": "Feature",
+    "uri": "Shopping.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ShoppingFeature"
+      }
+    ]
+  }
+]
